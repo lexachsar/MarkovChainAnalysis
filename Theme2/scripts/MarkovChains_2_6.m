@@ -23,7 +23,7 @@ npi = A\ b
 
 for n=1:8
  N(n,:)= npi';
- end
+end
  
 Sum=0;
 for n=1:8

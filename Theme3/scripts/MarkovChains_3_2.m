@@ -29,7 +29,7 @@ Mdg=eye(k);
 for n=1:k
 	Mdg(n,n)=M(n,n);
 end
-Msq=M.^2;
+Msq=M.^2
 
 
-Dps=M*(2*Mdg-Q)-Msq;
+Dps=M*(2*Mdg-Q)-Msq
