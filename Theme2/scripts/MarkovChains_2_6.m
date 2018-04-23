@@ -25,9 +25,4 @@ for n=1:8
  N(n,:)= pi';
 end
  
-Sum=0;
-for n=1:8
-    Sum += P^n - N;
-end
-
-Z=I+Sum
+Z = (I - (P - N))^-1
