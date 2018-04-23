@@ -19,14 +19,10 @@ A = P' - I;
 A(8,:) =ones(1,8);
 %решаем СЛАУ
 b = [0; 0; 0; 0; 0; 0; 0; 1];
-npi = A\ b
+npi = A\ b;
 
 for n=1:8
  N(n,:)= npi';
 end
  
-Sum=0;
-for n=1:8
-    Sum += P^n - N;
-end
-Z=I+Sum
+Z = (I - (P - N))^-1
